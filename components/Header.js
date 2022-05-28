@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { SearchIcon } from "@heroicons/react/outline";
+import {
+  SearchIcon,
+  GlobeAltIcon,
+  MenuIcon,
+  UserCircleIcon,
+  UserIcon,
+} from "@heroicons/react/solid";
 
 function Header() {
   return (
@@ -25,7 +31,18 @@ function Header() {
       </div>
 
       {/* Right */}
-      <div></div>
+      <div className="flex items-center justify-end text-gray-600 cursor-pointer">
+        <div className="items-center flex p-2 space-x-2">
+          <p className="hidden md:inline-flex font-semibold ">Become a host</p>
+          <GlobeAltIcon className="h-6 " />
+        </div>
+        <div className="flex border-2 rounded-full p-2 space-x-2">
+        <MenuIcon className="h-6" />
+          {/* Profile icon */}
+          <UserCircleIcon className="h-6" />
+         
+        </div>
+      </div>
     </header>
   );
 }
