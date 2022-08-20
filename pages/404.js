@@ -5,7 +5,6 @@ import Header from "../components/Header";
 
 function Four0Four() {
   return (
-    
     <div className="Relative">
       <Header />
       <Image
@@ -15,9 +14,6 @@ function Four0Four() {
         objectFit="contain"
       />
     </div>
-    
-    
-    
   );
 }
 

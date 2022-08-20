@@ -6,7 +6,7 @@ import {
   UserCircleIcon,
   UserIcon,
 } from "@heroicons/react/solid";
-import Link from 'next/link'
+import Link from "next/link";
 
 function Header() {
   return (
@@ -14,12 +14,13 @@ function Header() {
       {/* Left */}
       <div className="relative flex items-center h-10 hover:cursor-pointer my-auto">
         <Link href="/">
-        <Image
-          src="https://links.papareact.com/qd3"
-          layout="fill"
-          objectFit="contain"
-          objectPosition="left"
-        />
+          <Image
+            src="https://links.papareact.com/qd3"
+            layout="fill"
+            alt=""
+            objectFit="contain"
+            objectPosition="left"
+          />
         </Link>
       </div>
       {/* completed */}
@@ -40,10 +41,9 @@ function Header() {
           <GlobeAltIcon className="h-6 " />
         </div>
         <div className="flex border-2 rounded-full p-2 space-x-2">
-        <MenuIcon className="h-6" />
+          <MenuIcon className="h-6" />
           {/* Profile icon */}
           <UserCircleIcon className="h-6" />
-         
         </div>
       </div>
     </header>
