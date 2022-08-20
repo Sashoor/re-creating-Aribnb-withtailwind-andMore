@@ -6,7 +6,6 @@ import Header from "../components/Header";
 import LargeCard from "../components/LargeCard";
 import SmallCard from "../components/SmallCard";
 
-
 export default function Home({ exploreData, MovingCards }) {
   return (
     <div className="">
